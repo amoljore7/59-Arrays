@@ -21,4 +21,4 @@ function majorityElement(arr) {
 }
 
 let arr = [2, 2, 3, 3, 1, 2, 2];
-console.log(majorityElement(arr)); // Output: 2
+console.log(majorityElement(arr)); // Output: 2  n = 7/ 2 = 3 ans is 4 > 3. 2 is 4 times
