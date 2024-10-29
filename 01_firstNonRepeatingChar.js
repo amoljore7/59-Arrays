@@ -4,22 +4,19 @@ const firstNonRepeatingChar = (s) => {
     const charCount = {}
 
     for (let char of s) {
-        charCount[char]
-        if (charCount[char]) {
-            charCount[char] = charCount[char] + 1
-        } else {
-            charCount[char] = 1
-        }
+        charCount[char] = (charCount[char] || 0) + 1;
     }
+
     for (let key in charCount) {
         if (charCount[key] > 1) {
             delete charCount[key]
         }
     }
 
-    for (let index = 0; index < s.length; index++) {
-        if (charCount[s[index]] === 1) {
-            return index // return index
+    // Find the first character with a frequency of 1
+    for (let i = 0; i < s.length; i++) {
+        if (charCount[s[i]] === 1) {
+            return s[i];
         }
     }
 
