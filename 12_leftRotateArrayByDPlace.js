@@ -26,4 +26,5 @@ function leftRotateArrayByDPlace(arr, D) {
 }
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
-console.log(leftRotateArrayByDPlace(arr, 8)); //Output [4, 5, 6, 7, 1, 2, 2]
+console.log(leftRotateArrayByDPlace(arr, 3)); //Output [4, 5, 6, 7, 1, 2, 3]
+console.log(leftRotateArrayByDPlace(arr, 8)); //Output [5, 6, 7, 1, 2, 3, 4]
