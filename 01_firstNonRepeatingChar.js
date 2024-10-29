@@ -1,9 +1,9 @@
 //Problem 1: Find the First Non-Repeating Character
 
-const firstNonRepeatingChar = (s) => {
+const firstNonRepeatingChar = (string) => {
     const charCount = {}
 
-    for (let char of s) {
+    for (let char of string) {
         charCount[char] = (charCount[char] || 0) + 1;
     }
 
@@ -14,9 +14,9 @@ const firstNonRepeatingChar = (s) => {
     }
 
     // Find the first character with a frequency of 1
-    for (let i = 0; i < s.length; i++) {
-        if (charCount[s[i]] === 1) {
-            return s[i];
+    for (let i = 0; i < string.length; i++) {
+        if (charCount[string[i]] === 1) {
+            return string[i];
         }
     }
 
@@ -27,4 +27,4 @@ const firstNonRepeatingChar = (s) => {
     }
     return -1
 }
-console.log('>>>', firstNonRepeatingChar('loveleetcode'))
+console.log('>>>', firstNonRepeatingChar('loveleetcode')) // v
