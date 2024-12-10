@@ -31,16 +31,3 @@ const firstAndLastUniChar = (s) => {
 
 // Example usage
 firstAndLastUniChar('loveleetcode');
-
-
-// Input String	First Unique Character	Last Unique Character
-// 'programming'	'p'	'g'
-// 'aabbccddeeff'	None	None
-// 'swiss'	'w'	'w'
-// 'mississippi'	'm'	'm'
-// 'character'	'h'	'r'
-// 'abracadabra'	'c'	'c'
-// 'abcdefg'	'a'	'g'
-// 'banana'	'b'	'b'
-// 'balloon'	'b'	'n'
-// 'hello'	'h'	'o'
