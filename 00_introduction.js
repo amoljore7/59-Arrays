@@ -23,35 +23,38 @@ for (const char of str) {
 }
 
 const dd = new Set([1,2,2,3,4,4,5]);
-console.log(dd);
+console.log(dd); // Set(5) { 1, 2, 3, 4, 5 }
+for (const value of dd) {
+    console.log(value); // Logs 1, 2, 3, 4, 5
+}
 //convert set to array
-console.log([...dd]);
-console.log(Array.from(dd));
-console.log(Array.from('hello'));
+console.log([...dd]); // [ 1, 2, 3, 4, 5 ]
+console.log(Array.from(dd)); // [ 1, 2, 3, 4, 5 ]
+console.log(Array.from('hello')); // [ 'h', 'e', 'l', 'l', 'o' ]
 
 //convert array to set
 const arr = [1,2,2,3,4,4,5];
 const mySet = new Set(arr);
-console.log(mySet);
+console.log(mySet);// Set(5) { 1, 2, 3, 4, 5 }
 
 //convert map to array
 const myMap = new Map();
 myMap.set('a',1);
 myMap.set('b',2);
 myMap.set('c',3);
-console.log(myMap);
-console.log([...myMap]);
-console.log(Array.from(myMap));
+console.log(myMap);// Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
+console.log([...myMap]);// [ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] ]
+console.log(Array.from(myMap));//[ [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] ]
 
 //convert array to map
 const arr2 = [['a',1],['b',2],['c',3]];
 const mapFromArr = new Map(arr2);
-console.log(mapFromArr);
+console.log(mapFromArr);// Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
 
 //convert object to map
 const obj = {a:1, b:2, c:3};
 const mapFromObj = new Map(Object.entries(obj));
-console.log(mapFromObj);
+console.log(mapFromObj);// Map(3) { 'a' => 1, 'b' => 2, 'c' => 3 }
 
 //convert map to object
 const map2 = new Map();
@@ -59,6 +62,5 @@ map2.set('x',10);
 map2.set('y',20);
 map2.set('z',30);
 const objFromMap = Object.fromEntries(map2);
-console.log(objFromMap);
-console.log('>>>', firstNonRepeatingChar('aabbcc')) // -1
-console.log('>>>', firstNonRepeatingChar('aabbcddee')) // c
+console.log(objFromMap);// { x: 10, y: 20, z: 30 }
+console.log('----------------------------------');
