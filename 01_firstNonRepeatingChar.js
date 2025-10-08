@@ -13,12 +13,6 @@ const firstNonRepeatingChar = (string) => {
         }
     }
 
-    // Find the first character with a frequency of 1
-    for (let i = 0; i < string.length; i++) {
-        if (charCount[string[i]] === 1) {
-            return string[i];
-        }
-    }
 
     for (let value in charCount) {
         if (charCount[value] === 1) {
