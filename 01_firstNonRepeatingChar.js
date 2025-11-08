@@ -7,16 +7,16 @@ const firstNonRepeatingChar = (string) => {
         charCount[char] = (charCount[char] || 0) + 1;
     }
 
+    console.log(charCount) // { l: 2, o: 2, v: 1, e: 4, t: 1, c: 1, d: 1 }
     for (let key in charCount) {
         if (charCount[key] > 1) {
             delete charCount[key]
         }
     }
 
-
-    for (let value in charCount) {
-        if (charCount[value] === 1) {
-            return value // return value
+    for (let key in charCount) {
+        if (charCount[key] === 1) {
+            return key // return key
         }
     }
     return -1
