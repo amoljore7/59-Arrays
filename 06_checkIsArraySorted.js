@@ -1,9 +1,9 @@
 //check if the array is sorted
 
 function isSorted(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        // If the current element is smaller than the previous, return false
-        if (arr[i] < arr[i - 1]) {
+    for (let i = 0; i < arr.length; i++) {
+        // Compare each element with the next one and check if it's greater than the next element 
+        if (arr[i] > arr[i + 1]) {
             return false;
         }
     }

@@ -1,7 +1,11 @@
 function findMissingNumber(arr, n) {
     // Calculate the expected sum of numbers from 1 to n
-    const expectedSum = (n * (n + 1)) / 2; //15
-    console.log(expectedSum)
+    let expectedSum = 0
+    //using for loop how to calculate expectedSum
+    for (let i = 1; i <= n; i++) {
+        expectedSum += i; 
+    }
+   console.log(expectedSum) //15
 
     // Calculate the actual sum using a loop
     let actualSum = 0;

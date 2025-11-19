@@ -4,12 +4,12 @@ function removeDuplicateStringsArray(arr) {
 
     for (let str of arr) {
         // Create a sorted representation of the characters in the string
-        const sortedStr = str.split('').sort().join('');
+        const sortedStr = str.split('').sort().join(''); //EX "code" -> "cdeo" and "doce" -> "cdeo", both will map to same sortedStr
 
         // If the sorted character representation hasn't been seen, add it to uniqueStrings
         if (!seen[sortedStr]) {
             seen[sortedStr] = true; // Mark this character set as seen
-            uniqueStrings.push(str); // Add the original string to the result
+            uniqueStrings.push(str); // Add the original string to the result, like "code", "frame", "framer", etc.
         }
     }
 

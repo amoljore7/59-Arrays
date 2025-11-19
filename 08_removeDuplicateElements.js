@@ -9,11 +9,11 @@ function removeDuplicateElements(arr) {
             // If the number is already in elementCount, do nothing
         } else {
             // If it's not in elementCount, add it to elementCount and unique string
-            elementCount[num] = 1; // Mark the number as seen
-            unique += num; // Append the number to unique string (this can be adapted)
+            elementCount[num] = 1; // Mark the number as seen 
+            unique += num; // Append the number to unique string (this can be adapted) EX: '12345'
         }
     }
-
+    console.log(Array.from(unique)) //EX: [ '1', '2', '3', '4', '5' ]
     return unique.split('').map(Number); // Convert the string back to an array of numbers
 }
 

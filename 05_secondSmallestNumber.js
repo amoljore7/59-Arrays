@@ -2,8 +2,8 @@
 
 function sSmallest(arr) {
 
-    let smallest = arr[0]
-    let sSmallest = Number.MAX_SAFE_INTEGER
+    let smallest = arr[0] // assume first element is smallest
+    let sSmallest = Number.MAX_SAFE_INTEGER // assume second smallest is largest possible number
 
     for (i = 1; i < arr.length; i++) {
         if (arr[i] < smallest) {
@@ -13,7 +13,7 @@ function sSmallest(arr) {
             sSmallest = arr[i]
         }
     }
-    console.log('>>>sSmallest', sSmallest)
+    console.log('>>>sSmallest', sSmallest) // 1
 }
 
 sSmallest([1, 2, 3, 4, 5, 0, 8, 6, 9, 4, 2, 3])

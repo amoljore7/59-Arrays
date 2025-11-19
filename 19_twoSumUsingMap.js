@@ -11,7 +11,7 @@ function twoSum(nums, target) {
         }
 
         // Otherwise, store the number and its index in the map
-        map[nums[i]] = i;
+        map[nums[i]] = i; // Ex: {2: 0, 6: 1, 5: 2, ...}
     }
 
     return []; // In case no solution is found

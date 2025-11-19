@@ -13,7 +13,7 @@ const firstNonRepeatingChar = (string) => {
             delete charCount[key]
         }
     }
-
+    console.log(charCount) // { v: 1, t: 1, c: 1, d: 1 }
     for (let key in charCount) {
         if (charCount[key] === 1) {
             return key // return key
@@ -21,4 +21,4 @@ const firstNonRepeatingChar = (string) => {
     }
     return -1
 }
-console.log('>>>', firstNonRepeatingChar('loveleetcode')) // v
+console.log('>>>first NonRepeating Char is =>', firstNonRepeatingChar('loveleetcode')) // v

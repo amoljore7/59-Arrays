@@ -2,8 +2,8 @@
 
 function sLargest(arr) {
 
-    let largest = arr[0]
-    let sLargest = Number.MIN_SAFE_INTEGER || -1
+    let largest = arr[0] // assume first element is largest
+    let sLargest = Number.MIN_SAFE_INTEGER || -1 // assume second largest is smallest possible number
 
     for (i = 1; i < arr.length; i++) {
         if (arr[i] > largest) {
@@ -13,7 +13,7 @@ function sLargest(arr) {
             sLargest = arr[i]
         }
     }
-    console.log('>>>sLargest', sLargest)
+    console.log('>>>sLargest', sLargest) // 8
 }
 
 sLargest([1, 2, 3, 4, 5, 0, 8, 6, 9, 4, 2, 3])

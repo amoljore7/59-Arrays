@@ -14,7 +14,7 @@ function removeDuplicateCharacters(str) {
         }
     }
 
-    return unique;
+    return unique; // Return the string with duplicate characters removed
 }
 
 const input = 'priya riya supriya';
