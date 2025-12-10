@@ -26,7 +26,7 @@ const firstAndLastUniChar = (s) => {
 
     // Access the first and last keys
     console.log('>>> First Non-Repeating Character >>>', keys[0]); // 'v'
-    console.log('>>> Last Non-Repeating Character >>>', keys[keys.length - 1]); //
+    console.log('>>> Last Non-Repeating Character >>>', keys[keys.length - 1]); // 'd'
 };
 
 // Example usage
